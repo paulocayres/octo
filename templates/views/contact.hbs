@@ -1,16 +1,16 @@
 <div class="container">
-	<h1>Contact Us</h1>
+	<h1>Entre em Contato:</h1>
 </div>
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8 col-md-6">
 			{{#if enquirySubmitted}}
-			<h3>Thanks for getting in touch.</h3>
+			<h3>Obrigado pelo contato.</h3>
 			{{else}}
 			<form method="post">
 				<input type="hidden" name="action" value="contact">
 				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-					<label>Name</label>
+					<label>Nome</label>
 					<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
 				</div>
 				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
@@ -18,24 +18,24 @@
 					<input type="email" name="email" class="form-control" value="{{formData.email}}">
 				</div>
 				<div class="form-group">
-					<label>Phone</label>
-					<input type="text" name="phone" placeholder="(optional)" class="form-control" value="{{formData.phone}}">
+					<label>Telefone</label>
+					<input type="text" name="phone" placeholder="(opcional)" class="form-control" value="{{formData.phone}}">
 				</div>
 				<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
-					<label>What are you contacting us about?</label>
+					<label>Motivo do Contato</label>
 					<select name="enquiryType" class="form-control">
-						<option value="">(select one)</option>
+						<option value="">(Selecione um)</option>
 						{{#each enquiryTypes}}
 						<option value="{{value}}">{{label}}</option>
 						{{/each}}
 					</select>
 				</div>
 				<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
-					<label>Message</label>
-					<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>
+					<label>Mensagem</label>
+					<textarea name="message" placeholder="Deixe aqui sua mensagem." rows="4" class="form-control">{{formData.message}}</textarea>
 				</div>
 				<div class="form-actions">
-					<button type="submit" class="btn btn-primary">Send</button>
+					<button type="submit" class="btn btn-primary">Enviar</button>
 				</div>
 			</form>
 			{{/if}}

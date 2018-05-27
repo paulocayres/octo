@@ -19,18 +19,6 @@
     height: auto;
 }
 
-.thumbnail img{
-	height: 300px;
-	width: 100%;
-}
-
-.home{
-	@extend .thumbnail;
-	img{
-		height: 330px;
-	}
-}
-
 .evento img{
 	height: 300px;
 	width: 100%;

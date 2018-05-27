@@ -4326,7 +4326,7 @@ a.badge:hover, a.badge:focus {
       .jumbotron .h1 {
         font-size: 63px; } }
 
-.thumbnail, .home {
+.thumbnail {
   display: block;
   padding: 4px;
   margin-bottom: 20px;
@@ -4337,23 +4337,20 @@ a.badge:hover, a.badge:focus {
   -webkit-transition: border 0.2s ease-in-out;
   -o-transition: border 0.2s ease-in-out;
   transition: border 0.2s ease-in-out; }
-  .thumbnail > img, .home > img,
-  .thumbnail a > img,
-  .home a > img {
+  .thumbnail > img,
+  .thumbnail a > img {
     display: block;
     max-width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto; }
-  .thumbnail .caption, .home .caption {
+  .thumbnail .caption {
     padding: 9px;
     color: #333333; }
 
-a.thumbnail:hover, a.home:hover,
+a.thumbnail:hover,
 a.thumbnail:focus,
-a.home:focus,
-a.thumbnail.active,
-a.active.home {
+a.thumbnail.active {
   border-color: #337ab7; }
 
 .alert {
@@ -5840,13 +5837,6 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
-
-.thumbnail img, .home img {
-  height: 300px;
-  width: 100%; }
-
-.home img {
-  height: 330px; }
 
 .evento img {
   height: 300px;
