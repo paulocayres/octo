@@ -1,0 +1,95 @@
+#header {
+	margin-top: 2px;
+}
+
+
+#footer {
+	margin-top: 10px;
+	border-top: 2px solid #e9b78f;
+	padding-top: 10px;
+	padding-bottom: 20x;
+	padding-left: 1px;
+	padding-right: 1px;
+	color: #777777;
+}
+
+.gallery-image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.thumbnail img{
+	height: 300px;
+	width: 100%;
+}
+
+.home{
+	@extend .thumbnail;
+	img{
+		height: 330px;
+	}
+}
+
+.evento img{
+	height: 300px;
+	width: 100%;
+}
+
+.caption{
+	text-align: center;
+	background-color: rgb(70, 83, 133);
+	color: #ffffff;
+}
+
+.caption.list-group-item{
+	text-align: center;
+	background-color: rgb(70, 83, 133);
+	color: #ffffff;
+}
+
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+	z-index: 2;
+	color: #fff;
+	background-color: rgb(70, 83, 133);
+	border-color: rgb(70, 83, 133);
+	cursor: default; }
+
+.cardbottom{
+	text-align: center;
+}
+
+.caption-evento{
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+.top-evento{
+	background-color: black;
+}
+
+
+.navbar-default {
+	background-color: rgb(31, 49, 114);
+	border-color: #e7e7e7; }
+	.navbar-default .navbar-brand {
+	  color: #e7e7e7; }
+	  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+		color: #999898;
+		background-color: transparent; }
+	.navbar-default .navbar-text {
+	  color: #777; }
+	.navbar-default .navbar-nav > li > a {
+	  color: #e7e7e7; }
+	  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+		color:#999898;
+		background-color: transparent; }
+	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	  color: rgb(255, 255, 255);
+	  background-color: rgb(70, 83, 133); }
+	.navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
+	  color: #ccc;
+	  background-color: transparent; }

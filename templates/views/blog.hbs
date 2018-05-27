@@ -1,0 +1,35 @@
+<div class="container" >
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+			<div>
+				<h2>Categorias:</h2>
+				<div style="margin-top: 30px;" class="list-group ">
+					<a href="/blog" class="caption list-group-item">Todas as Categorias</a>
+						{{# each data.categories }}
+						<a href="{{categoryUrl key}}" class="false list-group-item">{{name}}</a>
+						{{/each}}
+				</div>
+			</div>
+		</div>
+
+		<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+			<h1 class="evento">Eventos:</h1>
+		</div>
+
+		{{# each data.posts.results}}
+		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+			<div class="thumbnail">
+				<div class="caption list-group-item">
+					<h2>{{{title}}}</h2>
+				</div>
+				{{#if image}}<img src="{{{cloudinaryUrl image}}}">{{/if}}
+				<div class="cardbottom">
+					<h3>{{{content.brief}}}</h3>
+					<p>{{{content.extended}}}</p>
+				</div>
+			</div>
+		</div>
+		{{/each}}
+	</div>
+	{{>pagination}}
+</div>
