@@ -5842,12 +5842,21 @@ button.close {
   height: 300px;
   width: 100%; }
 
+.thumbnail img {
+  height: 300px;
+  width: 100%; }
+
 .caption {
   text-align: center;
   background-color: #465385;
   color: #ffffff; }
 
 .caption.list-group-item {
+  text-align: center;
+  background-color: #465385;
+  color: #ffffff; }
+
+.panel-heading {
   text-align: center;
   background-color: #465385;
   color: #ffffff; }
@@ -5889,7 +5898,9 @@ button.close {
   label {
     font-size: 8px; }
   #footer {
-    font-size: 10px; } }
+    font-size: 10px; }
+  #d1 {
+    height: 150px; } }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -5908,7 +5919,9 @@ button.close {
   label {
     font-size: 10px; }
   #footer {
-    font-size: 12px; } }
+    font-size: 12px; }
+  #d1 {
+    height: 200px; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -5927,7 +5940,13 @@ button.close {
   label {
     font-size: 15px; }
   #footer {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .row.display-flex {
+    display: flex;
+    flex-wrap: wrap; }
+  .row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column; } }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -5946,7 +5965,13 @@ button.close {
   label {
     font-size: 15px; }
   #footer {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .row.display-flex {
+    display: flex;
+    flex-wrap: wrap; }
+  .row.display-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column; } }
 
 .navbar-default {
   background-color: #1f3172;

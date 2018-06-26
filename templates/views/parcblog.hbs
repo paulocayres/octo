@@ -14,22 +14,23 @@
 
 		<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
 			<h2 class="evento">Parceiros:</h2>
-		</div>
-
-		{{# each data.parcs.results}}
-		<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-			<div class="thumbnail">
-				<div class="caption list-group-item">
-					<h3>{{{title}}}</h3>
-				</div>
-				{{#if image}}<img src="{{{cloudinaryUrl image}}}">{{/if}}
-				<div class="cardbottom">
-					<h3>{{{content.brief}}}</h3>
-					<h4>{{{content.extended}}}</h4>
-				</div>
+				<div class="row display-flex">
+				{{# each data.parcs.results}}
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+						<div class="thumbnail">
+							<div class="caption list-group-item">
+								<h3>{{{title}}}</h3>
+							</div>
+							{{#if image}}<img src="{{{cloudinaryUrl image}}}">{{/if}}
+							<div class="cardbottom">
+								<h3>{{{content.brief}}}</h3>
+								<h4>{{{content.extended}}}</h4>
+							</div>
+						</div>
+					</div>
+				{{/each}}
 			</div>
 		</div>
-		{{/each}}
 	</div>
 	{{>parcpagination}}
 </div>
@@ -38,7 +39,7 @@
 	<div class="row">
 		<div class="col-sm-12 col-xs-12 col-md-4 col-lg-2">
 			<div>
-				<h2>Categorias:</h2>
+				<h2>Categorias:</h2> 
 				<div style="margin-top: 30px;" class="list-group">
 					<a href="/parcblog" class="active list-group-item">Todas as Categorias</a>
 						{{# each data.categories }}

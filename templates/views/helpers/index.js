@@ -413,5 +413,13 @@ module.exports = function () {
 		return obj._[underscoreMethod].format();
 	};
 
+	_helpers.formatTime = function (date, format) {
+		var mmnt = moment(date);
+		return mmnt.format(format);
+	};
+
 	return _helpers;
 };
+
+
+

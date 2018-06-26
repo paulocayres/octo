@@ -7,6 +7,7 @@ var Types = keystone.Field.Types;
  */
 
 var Parc = new keystone.List('Parc', {
+	label: 'Parceiros',
 	map: { name: 'title' },
 	autokey: { path: 'slug', from: 'title', unique: true },
 });
