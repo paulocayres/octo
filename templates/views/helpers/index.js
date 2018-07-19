@@ -128,7 +128,7 @@ module.exports = function () {
 			if (autolink) {
 				return _.map(tags, function (tag) {
 					return linkTemplate({
-						url: ('/sevico/' + tag.key),
+						url: ('/servico/' + tag.key),
 						text: _.escape(tag.name),
 					});
 				}).join(separator);
@@ -251,7 +251,7 @@ module.exports = function () {
 	};
 
 	_helpers.servicoCategoryUrl = function (categorySlug, options) {
-		return ('/sevico/' + categorySlug);
+		return ('/servico/' + categorySlug);
 	};
 
 	// ### Pagination Helpers
