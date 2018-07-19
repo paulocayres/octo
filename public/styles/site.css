@@ -5858,7 +5858,7 @@ button.close {
 
 .panel-heading {
   text-align: center;
-  background-color: black;
+  background-color: #860707;
   color: #ffffff; }
 
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
