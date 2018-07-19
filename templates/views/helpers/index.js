@@ -115,7 +115,7 @@ module.exports = function () {
 		return new hbs.SafeString(output);
 	};
 
-	_helpers.categoryParcList = function (categories, options) {
+	_helpers.categoriaServicoList = function (categories, options) {
 		var autolink = _.isString(options.hash.autolink) && options.hash.autolink === 'false' ? false : true;
 		var separator = _.isString(options.hash.separator) ? options.hash.separator : ', ';
 		var prefix = _.isString(options.hash.prefix) ? options.hash.prefix : '';
@@ -128,7 +128,7 @@ module.exports = function () {
 			if (autolink) {
 				return _.map(tags, function (tag) {
 					return linkTemplate({
-						url: ('/parcblog/' + tag.key),
+						url: ('/sevico/' + tag.key),
 						text: _.escape(tag.name),
 					});
 				}).join(separator);
@@ -178,9 +178,9 @@ module.exports = function () {
 		return rtn;
 	};
 
-	_helpers.adminEditableParcUrl = function (user, options) {
+	_helpers.adminEditableServicoUrl = function (user, options) {
 		var rtn = keystone.app.locals.editable(user, {
-			list: 'Parc',
+			list: 'Servico',
 			id: options,
 		});
 		return rtn;
@@ -231,8 +231,8 @@ module.exports = function () {
 		return ('/blog/post/' + postSlug);
 	};
 
-	_helpers.parcUrl = function (parcSlug, options) {
-		return ('/parcblog/parc/' + parcSlug);
+	_helpers.servicoUrl = function (servicoSlug, options) {
+		return ('/servico/detalhe/' + servicoSlug);
 	};
 
 	// might be a ghost helper
@@ -241,8 +241,8 @@ module.exports = function () {
 		return '/blog?page=' + pageNumber;
 	};
 
-	_helpers.parcPageUrl = function (pageNumber, options) {
-		return '/parcblog?page=' + pageNumber;
+	_helpers.servicoPageUrl = function (pageNumber, options) {
+		return '/servico?page=' + pageNumber;
 	};
 
 	// create the category url for a blog-category page
@@ -250,8 +250,8 @@ module.exports = function () {
 		return ('/blog/' + categorySlug);
 	};
 
-	_helpers.parcCategoryUrl = function (categorySlug, options) {
-		return ('/parcblog/' + categorySlug);
+	_helpers.servicoCategoryUrl = function (categorySlug, options) {
+		return ('/sevico/' + categorySlug);
 	};
 
 	// ### Pagination Helpers
@@ -301,7 +301,7 @@ module.exports = function () {
 		return html;
 	};
 
-	_helpers.paginationParcNavigation = function (pages, currentPage, totalPages, options) {
+	_helpers.paginationServicoNavigation = function (pages, currentPage, totalPages, options) {
 		var html = '';
 
 		// pages should be an array ex.  [1,2,3,4,5,6,7,8,9,10, '....']
@@ -321,9 +321,9 @@ module.exports = function () {
 			}
 
 			// get the pageUrl using the integer value
-			var parcPageUrl = _helpers.parcPageUrl(page);
+			var servicoPageUrl = _helpers.servicoPageUrl(page);
 			// wrapup the html
-			html += '<li' + liClass + '>' + linkTemplate({ url: parcPageUrl, text: pageText }) + '</li>\n';
+			html += '<li' + liClass + '>' + linkTemplate({ url: servicoPageUrl, text: pageText }) + '</li>\n';
 		});
 		return html;
 	};
@@ -337,20 +337,20 @@ module.exports = function () {
 		return _helpers.pageUrl(previousPage);
 	};
 
-	_helpers.paginationParcPreviousUrl = function (previousPage, totalPages) {
+	_helpers.paginationServicoPreviousUrl = function (previousPage, totalPages) {
 		if (previousPage === false) {
 			previousPage = 1;
 		}
-		return _helpers.parcPageUrl(previousPage);
+		return _helpers.servicoPageUrl(previousPage);
 	};
 
 	// special helper to ensure that we always have a valid next page url set
 	// even if the link is disabled, will default to totalPages
-	_helpers.paginationParcNextUrl = function (nextPage, totalPages) {
+	_helpers.paginationServicoNextUrl = function (nextPage, totalPages) {
 		if (nextPage === false) {
 			nextPage = totalPages;
 		}
-		return _helpers.parcPageUrl(nextPage);
+		return _helpers.servicoPageUrl(nextPage);
 	};
 
 	_helpers.paginationNextUrl = function (nextPage, totalPages) {
@@ -413,5 +413,13 @@ module.exports = function () {
 		return obj._[underscoreMethod].format();
 	};
 
+	_helpers.formatTime = function (date, format) {
+		var mmnt = moment(date);
+		return mmnt.format(format);
+	};
+
 	return _helpers;
 };
+
+
+

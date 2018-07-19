@@ -20,13 +20,15 @@ var _ = require('lodash');
 exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: 'Home', key: 'home', href: '/' },
-		{ label: 'Eventos', key: 'blog', href: '/blog' },
-		{ label: 'Parceiros', key: 'parcblog', href: '/parcblog' },
-		{ label: 'Galeria', key: 'gallery', href: '/gallery'},
-		{ label: 'Contato', key: 'contact', href: '/contact' },
+		{ label: 'Serviços', key: 'servico', href: '/servico' },
+		{ label: 'Portfólio', key: 'portfolio', href: '/portfolio'},
+		{ label: 'Quem Somos', key: 'quemsomos', href: '/quemsomos'},	
+		{ label: 'Contato', key: 'contato', href: '/contato' },
 	];
 	res.locals.user = req.user;
 	next();
+	
+
 };
 
 
@@ -50,7 +52,7 @@ exports.flashMessages = function (req, res, next) {
  */
 exports.requireUser = function (req, res, next) {
 	if (!req.user) {
-		req.flash('error', 'Please sign in to access this page.');
+		req.flash('error', 'Favor autenticar seu usuário para cessar esta página.');
 		res.redirect('/keystone/signin');
 	} else {
 		next();

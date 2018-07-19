@@ -6,24 +6,23 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Set locals
-	locals.section = 'parc';
+	locals.section = 'servico';
 	locals.filters = {
-		parc: req.params.parc,
+		servico: req.params.servico,
 	};
 	locals.data = {
-		parcs: [],
+		servicos: [],
 	};
 
 	// Load the current parc
 	view.on('init', function (next) {
 
-		var q = keystone.list('Parc').model.findOne({
-			state: 'published',
-			slug: locals.filters.parc,
+		var q = keystone.list('Servico').model.findOne({
+			slug: locals.filters.servico,
 		}).populate('author categories');
 
 		q.exec(function (err, result) {
-			locals.data.parc = result;
+			locals.data.servico = result;
 			next(err);
 		});
 
@@ -32,15 +31,15 @@ exports = module.exports = function (req, res) {
 	// Load other parcs
 	view.on('init', function (next) {
 
-		var q = keystone.list('Parc').model.find().where('state', 'published').sort('-publishedDate').populate('author').limit('4');
+		var q = keystone.list('Servico').model.find().populate('author').limit('4');
 
 		q.exec(function (err, results) {
-			locals.data.parcs = results;
+			locals.data.servicos = results;
 			next(err);
 		});
 
 	});
 
 	// Render the view
-	view.render('parc');
+	view.render('servicoDetalhe');
 };

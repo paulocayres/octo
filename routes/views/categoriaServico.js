@@ -7,31 +7,31 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Init locals
-	locals.section = 'parcblog';
+	locals.section = 'servico';
 	locals.filters = {
-		category: req.params.category,
+		categoria: req.params.categoria,
 	};
 	locals.data = {
-		parcs: [],
-		categories: [],
+		servicos: [],
+		categorias: [],
 	};
 
 	// Load all categories
 	view.on('init', function (next) {
 
-		keystone.list('ParcCategory').model.find().sort('name').exec(function (err, results) {
+		keystone.list('CategoriaServico').model.find().sort('name').exec(function (err, results) {
 
 			if (err || !results.length) {
 				return next(err);
 			}
 
-			locals.data.categories = results;
+			locals.data.categorias = results;
 
 			// Load the counts for each category
-			async.each(locals.data.categories, function (category, next) {
+			async.each(locals.data.categorias, function (categoria, next) {
 
-				keystone.list('Parc').model.count().where('categories').in([category.id]).exec(function (err, count) {
-					category.parcCount = count;
+				keystone.list('Servico').model.count().where('categories').in([categoria.id]).exec(function (err, count) {
+					categoria.servicoCount = count;
 					next(err);
 				});
 
@@ -44,9 +44,9 @@ exports = module.exports = function (req, res) {
 	// Load the current category filter
 	view.on('init', function (next) {
 
-		if (req.params.category) {
-			keystone.list('ParcCategory').model.findOne({ key: locals.filters.category }).exec(function (err, result) {
-				locals.data.category = result;
+		if (req.params.categoria) {
+			keystone.list('CategoriaServico').model.findOne({ key: locals.filters.categoria }).exec(function (err, result) {
+				locals.data.categoria = result;
 				next(err);
 			});
 		} else {
@@ -57,27 +57,23 @@ exports = module.exports = function (req, res) {
 	// Load the parcs
 	view.on('init', function (next) {
 
-		var q = keystone.list('Parc').paginate({
+		var q = keystone.list('Servico').paginate({
 			page: req.query.page || 1,
 			perPage: 10,
 			maxPages: 10,
-			filters: {
-				state: 'published',
-			},
 		})
-			.sort('-publishedDate')
 			.populate('author categories');
 
-		if (locals.data.category) {
-			q.where('categories').in([locals.data.category]);
+		if (locals.data.categoria) {
+			q.where('categories').in([locals.data.categoria]);
 		}
 
 		q.exec(function (err, results) {
-			locals.data.parcs = results;
+			locals.data.servicos = results;
 			next(err);
 		});
 	});
 
 	// Render the view
-	view.render('parcblog');
+	view.render('servico');
 };

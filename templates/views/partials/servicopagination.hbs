@@ -1,0 +1,13 @@
+<ul class="pagination">
+	<li {{#unless data.servicos.previous}}class="disabled"{{/unless}}>
+		<a href="{{paginationServicoPreviousUrl data.servico.previous}}">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+	</li>
+	{{{paginationServicoNavigation data.servicos.pages data.servicos.currentPage data.servicos.totalPages}}}
+	<li {{#unless data.servicos.next}}class="disabled"{{/unless}}>
+		<a href="{{paginationServicoNextUrl data.servicos.next data.servicos.totalPages}}">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+	</li>
+</ul>
