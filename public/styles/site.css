@@ -5843,11 +5843,7 @@ button.close {
   width: 100%; }
 
 .thumbnail img {
-<<<<<<< HEAD
   height: 300px;
-=======
-  height: 400px;
->>>>>>> c2611674ee5300532a548c9585ca888cfb777c2d
   width: 100%; }
 
 .caption {
@@ -5862,11 +5858,7 @@ button.close {
 
 .panel-heading {
   text-align: center;
-<<<<<<< HEAD
   background-color: black;
-=======
-  background-color: #465385;
->>>>>>> c2611674ee5300532a548c9585ca888cfb777c2d
   color: #ffffff; }
 
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
