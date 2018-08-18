@@ -5867,21 +5867,18 @@ button.close {
     margin-left: auto;
     margin-right: auto; }
 
-.caption {
-  text-align: center;
-  background-color: #ff7200;
-  color: #302f2f; }
-
 .caption.list-group-item {
   text-align: center;
-  background-color: #ff7200; }
+  background-color: #28292c;
+  color: #c4c4c4; }
   .caption.list-group-item h3 {
-    color: #302f2f; }
+    color: #c4c4c4; }
   .caption.list-group-item h2 {
-    color: #302f2f; }
+    color: #c4c4c4; }
 
 .categoria a.caption:hover {
-  background-color: #fa9e53; }
+  background-color: #626468;
+  color: #fcfafa; }
 
 .categoria a.false:hover {
   background-color: #e9e7e6; }
@@ -5935,8 +5932,8 @@ button.close {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #fff;
-  background-color: #ff9137;
-  border-color: #faba85;
+  background-color: #28292c;
+  border-color: #575758;
   cursor: default; }
 
 .pagination > .disabled > span,
@@ -5946,8 +5943,8 @@ button.close {
 .pagination > .disabled > a:hover,
 .pagination > .disabled > a:focus {
   color: #777777;
-  background-color: #fdd0aa;
-  border-color: #faba85;
+  background-color: #c0bebe;
+  border-color: #cacaca;
   cursor: not-allowed; }
 
 .pagination-lg > li > a,
@@ -6128,4 +6125,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: black; }
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed; }
