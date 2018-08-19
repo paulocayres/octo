@@ -5831,6 +5831,7 @@ button.close {
 #footer {
   padding-top: 5px;
   border-top: 2px solid #ff7200;
+  padding-left: 5px;
   color: #b1b1b1;
   background-color: #131212;
   height: 60px; }
