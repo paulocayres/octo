@@ -1,18 +1,21 @@
 #header {
 	margin-top: 2px;
+	padding-bottom: 80px;
 }
 
-
+#body{
+	padding-bottom: 80px;
+}
 
 #footer {
-	margin-top: 10px;
-	border-top: 2px solid #ff7200;
-	padding-top: 10px;
-	padding-bottom: 20x;
-	padding-left: 1px;
-	padding-right: 1px;
+	padding-top: 5px;
+	border-top:  2px solid #ff7200;
 	color: #b1b1b1;
+	background-color: rgb(19, 18, 18);
+	height: 60px;
 }
+
+
 
 .gallery-image img{
     display: block;
@@ -401,14 +404,14 @@
 	  background-color: transparent; }
 
 
-	  body {
+	body {
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-size: 14px;
 		line-height: 1.42857;
 		color: #333333;
 		background-color: black;
-		
+		background-image: url("../../images/fire2.png");
 		background-repeat: no-repeat;
-		background-size: auto;
+		background-size: cover;
 		background-attachment: fixed;
 	}
