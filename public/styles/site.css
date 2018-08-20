@@ -6067,7 +6067,12 @@ button.close {
     flex-wrap: wrap; }
   .row.display-flex > [class*='col-'] {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .sidebar {
+    position: fixed;
+    z-index: 1000; }
+  .main {
+    left: 190px; } }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -6092,7 +6097,12 @@ button.close {
     flex-wrap: wrap; }
   .row.display-flex > [class*='col-'] {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .sidebar {
+    position: fixed;
+    z-index: 1000; }
+  .main {
+    left: 220px; } }
 
 .navbar-default {
   background-color: #ff7200;
