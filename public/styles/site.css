@@ -5854,7 +5854,7 @@ h3 .small, .h3 small,
   background-color: #131212; }
 
 #body {
-  padding-bottom: 10px; }
+  padding-bottom: 40px; }
 
 #footer {
   padding-top: 5px;
@@ -5863,8 +5863,7 @@ h3 .small, .h3 small,
   color: #b1b1b1;
   background-color: #131212;
   height: 30px;
-  text-align: center;
-  margin-top: 15px; }
+  text-align: center; }
 
 .gallery-image img {
   display: block;
@@ -5889,7 +5888,7 @@ h3 .small, .h3 small,
 .logo {
   margin-top: 10px;
   padding: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   line-height: 1.42857;
   background-color: #b1b1b1;
   border: 1px solid #ddd;

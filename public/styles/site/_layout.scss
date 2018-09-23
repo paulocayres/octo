@@ -35,7 +35,7 @@ h3, .h3 {
 }
 
 #body {
-	padding-bottom: 10px;
+	padding-bottom: 40px;
 }
 
 #footer {
@@ -46,7 +46,6 @@ h3, .h3 {
 	background-color: rgb(19, 18, 18);
 	height: 30px;
 	text-align: center;
-	margin-top: 15px;
 }
 
 .gallery-image img {
@@ -77,7 +76,7 @@ h3, .h3 {
 .logo {
 	margin-top: 10px;
 	padding: $thumbnail-padding;
-	margin-bottom: $line-height-computed;
+	margin-bottom: 5px;
 	line-height: $line-height-base;
 	background-color: #b1b1b1;
 	border: 1px solid $thumbnail-border;
