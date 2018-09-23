@@ -5821,9 +5821,26 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+h1 small,
+h1 .small, .h1 small,
+.h1 .small,
+h2 small,
+h2 .small, .h2 small,
+.h2 .small,
+h3 small,
+h3 .small, .h3 small,
+.h3 .small {
+  font-size: 65%; }
+
 #header {
   margin-top: 2px;
-  padding-bottom: 80px; }
+  padding-bottom: 15px; }
 
 .carousel .item {
   max-height: 550px;
@@ -5834,11 +5851,10 @@ button.close {
   max-height: inherit; }
 
 #headerlogo {
-  height: 150px;
   background-color: #131212; }
 
 #body {
-  padding-bottom: 30px; }
+  padding-bottom: 10px; }
 
 #footer {
   padding-top: 5px;
@@ -5847,7 +5863,8 @@ button.close {
   color: #b1b1b1;
   background-color: #131212;
   height: 30px;
-  text-align: center; }
+  text-align: center;
+  margin-top: 15px; }
 
 .gallery-image img {
   display: block;
@@ -5860,7 +5877,7 @@ button.close {
 
 .img-overflow {
   overflow: hidden;
-  max-height: 120px;
+  max-height: 80px;
   position: relative; }
 
 .img-overflow img {
@@ -5870,6 +5887,7 @@ button.close {
   margin-right: auto; }
 
 .logo {
+  margin-top: 10px;
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
@@ -6042,7 +6060,7 @@ button.close {
   label {
     font-size: 8px; }
   #footer {
-    font-size: 10px; }
+    font-size: 8px; }
   #d1 {
     height: 150px; } }
 
@@ -6063,7 +6081,7 @@ button.close {
   label {
     font-size: 10px; }
   #footer {
-    font-size: 12px; }
+    font-size: 10px; }
   #d1 {
     height: 200px; } }
 
@@ -6084,7 +6102,7 @@ button.close {
   label {
     font-size: 15px; }
   #footer {
-    font-size: 14px; }
+    font-size: 12px; }
   .row.display-flex {
     display: flex;
     flex-wrap: wrap; }
@@ -6113,7 +6131,7 @@ button.close {
   label {
     font-size: 15px; }
   #footer {
-    font-size: 14px; }
+    font-size: 12px; }
   .row.display-flex {
     display: flex;
     flex-wrap: wrap; }
@@ -6174,7 +6192,8 @@ fieldset[disabled] .btn-primary.active {
 
 .navbar-default {
   background-color: #fc9d50;
-  border-color: #ffd3ae; }
+  border-color: #ffd3ae;
+  margin-bottom: 10px; }
 
 .navbar-default .navbar-brand {
   color: #e7e7e7; }
