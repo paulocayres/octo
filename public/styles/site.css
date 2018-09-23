@@ -5865,10 +5865,12 @@ h3 .small, .h3 small,
   height: 30px;
   text-align: center; }
 
-.gallery-image img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
+.gallery-image {
+  margin-bottom: 30px; }
+  .gallery-image img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
 
 .evento img {
   height: 300px;
