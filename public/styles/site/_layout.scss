@@ -4,7 +4,7 @@
 }
 
 .carousel .item {
-	max-height: 350px;
+	max-height: 550px;
 	overflow: hidden;
 }
 
@@ -350,9 +350,6 @@
 		left: 190px;
 	}
 
-	.carousel{
-		max-width: 80%;
-	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -398,9 +395,6 @@
 		left: 220px;
 	}
 
-	.carousel{
-		max-width: 70%;
-	}
 }
 
 .btn-primary {

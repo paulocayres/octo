@@ -5826,7 +5826,7 @@ button.close {
   padding-bottom: 80px; }
 
 .carousel .item {
-  max-height: 350px;
+  max-height: 550px;
   overflow: hidden; }
 
 .item img {
@@ -6094,9 +6094,7 @@ button.close {
   .sidebar {
     z-index: 1000; }
   .main {
-    left: 190px; }
-  .carousel {
-    max-width: 80%; } }
+    left: 190px; } }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -6125,9 +6123,7 @@ button.close {
   .sidebar {
     z-index: 1000; }
   .main {
-    left: 220px; }
-  .carousel {
-    max-width: 70%; } }
+    left: 220px; } }
 
 .btn-primary {
   color: #fff;
