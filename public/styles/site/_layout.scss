@@ -32,6 +32,15 @@ h3 .small,
 .carousel .item {
 	max-height: 550px;
 	overflow: hidden;
+
+	h3{
+		color: white;
+		text-shadow: 1.5px 1.5px black;
+	}
+	p{
+		color: white;
+		text-shadow: 1.5px 1.5px black;
+	}
 }
 
 .item img {
@@ -319,6 +328,10 @@ h3 .small,
 	#d1 {
 		height: 150px;
 	}
+
+	.img-overflow {
+		max-height: 50px;
+	}
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -358,6 +371,10 @@ h3 .small,
 
 	#d1 {
 		height: 200px;
+	}
+
+	.img-overflow {
+		max-height: 60px;
 	}
 }
 
@@ -415,6 +432,10 @@ h3 .small,
 		left: 190px;
 	}
 
+	.img-overflow {
+		max-height: 80px;
+	}
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -469,6 +490,10 @@ h3 .small,
 
 	.main {
 		left: 220px;
+	}
+
+	.img-overflow {
+		max-height: 80px;
 	}
 
 }

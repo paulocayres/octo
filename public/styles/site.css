@@ -5845,6 +5845,12 @@ h3 .small, .h3 small,
 .carousel .item {
   max-height: 550px;
   overflow: hidden; }
+  .carousel .item h3 {
+    color: white;
+    text-shadow: 1.5px 1.5px black; }
+  .carousel .item p {
+    color: white;
+    text-shadow: 1.5px 1.5px black; }
 
 .item img {
   max-width: 100%;
@@ -6063,7 +6069,9 @@ h3 .small, .h3 small,
   #footer {
     font-size: 8px; }
   #d1 {
-    height: 150px; } }
+    height: 150px; }
+  .img-overflow {
+    max-height: 50px; } }
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -6084,7 +6092,9 @@ h3 .small, .h3 small,
   #footer {
     font-size: 10px; }
   #d1 {
-    height: 200px; } }
+    height: 200px; }
+  .img-overflow {
+    max-height: 60px; } }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -6113,7 +6123,9 @@ h3 .small, .h3 small,
   .sidebar {
     z-index: 1000; }
   .main {
-    left: 190px; } }
+    left: 190px; }
+  .img-overflow {
+    max-height: 80px; } }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -6142,7 +6154,9 @@ h3 .small, .h3 small,
   .sidebar {
     z-index: 1000; }
   .main {
-    left: 220px; } }
+    left: 220px; }
+  .img-overflow {
+    max-height: 80px; } }
 
 .btn-primary {
   color: #fff;
