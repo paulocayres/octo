@@ -5821,6 +5821,16 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.carousel .item {
+  max-height: 550px;
+  overflow: hidden; }
+  .carousel .item h3 {
+    color: white;
+    text-shadow: 1.5px 1.5px black; }
+  .carousel .item p {
+    color: white;
+    text-shadow: 1.5px 1.5px black; }
+
 h1, .h1,
 h2, .h2,
 h3, .h3 {
@@ -5841,16 +5851,6 @@ h3 .small, .h3 small,
 #header {
   margin-top: 2px;
   padding-bottom: 15px; }
-
-.carousel .item {
-  max-height: 550px;
-  overflow: hidden; }
-  .carousel .item h3 {
-    color: white;
-    text-shadow: 1.5px 1.5px black; }
-  .carousel .item p {
-    color: white;
-    text-shadow: 1.5px 1.5px black; }
 
 .item img {
   max-width: 100%;
