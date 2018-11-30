@@ -5821,6 +5821,18 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.pad {
+  padding-top: 50px;
+  padding-bottom: 50px; }
+
+.pad2 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-bottom: 100px; }
+
+.pad3 {
+  padding-top: 80px; }
+
 .carousel .item {
   max-height: 550px;
   overflow: hidden; }
@@ -5897,6 +5909,7 @@ h3 .small, .h3 small,
   margin-top: 10px;
   padding: 4px;
   margin-bottom: 5px;
+  text-align: center;
   line-height: 1.42857;
   background-color: #b1b1b1;
   border: 1px solid #ddd;
@@ -6052,6 +6065,11 @@ h3 .small, .h3 small,
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 1px) {
+  .hero {
+    width: "500";
+    height: "500"; }
+  .iniheight {
+    height: 650px; }
   h1 {
     font-size: 20px; }
   h2 {
@@ -6075,6 +6093,11 @@ h3 .small, .h3 small,
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .hero {
+    width: "300";
+    height: "300"; }
+  .iniheight {
+    height: 500px; }
   h1 {
     font-size: 25px; }
   h2 {
@@ -6098,6 +6121,11 @@ h3 .small, .h3 small,
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .hero {
+    width: "500";
+    height: "500"; }
+  .iniheight {
+    height: 650px; }
   h1 {
     font-size: 30px; }
   h2 {
@@ -6129,6 +6157,11 @@ h3 .small, .h3 small,
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .hero {
+    width: "500";
+    height: "500"; }
+  .iniheight {
+    height: 650px; }
   h1 {
     font-size: 30px; }
   h2 {
