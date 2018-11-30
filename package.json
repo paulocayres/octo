@@ -29,7 +29,8 @@
     "description": "octo produções",
     "version": "0.0.1",
     "engines": {
-      "npm": "5.6.0"
+      "npm": "5.6.0",
+      "node": "8.11.2"
     }
 
 
