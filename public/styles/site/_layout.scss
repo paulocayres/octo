@@ -3,15 +3,9 @@
 	padding-bottom: 50px;
 }
 
-.pad2 { 
-    padding-top: 80px;
-	padding-bottom: 80px;
-	margin-bottom: 100px;
-}
 
-.pad3 { 
-    padding-top: 80px;
-}
+
+
 
 
 
@@ -314,6 +308,19 @@ h3 .small,
 
 @media (min-width: 1px) {
 
+	
+	.pad2 { 
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-bottom: 40px;
+	}
+
+	.pad3 { 
+		padding-top: 10px;
+		text-align: center;
+		font-size: 15px;
+	}
+
 	.hero{
 		width:"500";
 		height: "500";
@@ -369,6 +376,18 @@ h3 .small,
 
 @media (min-width: 768px) {
 
+	.pad2 { 
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-bottom: 100px;
+	}
+
+	.pad3 { 
+		padding-top: 80px;
+		text-align: justify;
+		font-size: 15px;
+	}
+
 	.hero{
 		width:"300";
 		height: "300";
@@ -421,6 +440,18 @@ h3 .small,
 /* Medium devices (desktops, 992px and up) */
 
 @media (min-width: 992px) {
+
+	.pad2 { 
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-bottom: 100px;
+	}
+
+	.pad3 { 
+		padding-top: 80px;
+		text-align: justify;
+		font-size: 16px;
+	}
 
 	.hero{
 		width:"500";
@@ -490,6 +521,18 @@ h3 .small,
 /* Large devices (large desktops, 1200px and up) */
 
 @media (min-width: 1200px) {
+
+	.pad2 { 
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-bottom: 50px;
+	}
+
+	.pad3 { 
+		padding-top: 80px;
+		text-align: justify;
+		font-size: 20px;
+	}
 
 	.hero{
 		width:"500";
