@@ -6065,6 +6065,10 @@ h3 .small, .h3 small,
     padding-top: 10px;
     text-align: center;
     font-size: 15px; }
+  .pad4 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 12px; }
   .hero {
     width: "500";
     height: "500"; }
@@ -6101,6 +6105,10 @@ h3 .small, .h3 small,
     padding-top: 80px;
     text-align: justify;
     font-size: 15px; }
+  .pad4 {
+    padding-top: 10px;
+    text-align: justify;
+    font-size: 14px; }
   .hero {
     width: "300";
     height: "300"; }
@@ -6135,6 +6143,10 @@ h3 .small, .h3 small,
     margin-bottom: 100px; }
   .pad3 {
     padding-top: 80px;
+    text-align: justify;
+    font-size: 16px; }
+  .pad4 {
+    padding-top: 10px;
     text-align: justify;
     font-size: 16px; }
   .hero {
@@ -6181,6 +6193,10 @@ h3 .small, .h3 small,
     padding-top: 80px;
     text-align: justify;
     font-size: 20px; }
+  .pad4 {
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 18px; }
   .hero {
     width: "500";
     height: "500"; }
