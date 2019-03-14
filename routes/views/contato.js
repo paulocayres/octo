@@ -7,11 +7,11 @@ exports = module.exports = function (req, res) {
 	var locals = res.locals;
 
 	// Set locals
-	locals.section = 'contatos';
-	locals.enquiryTypes = Contato.fields.enquiryType.ops;
+	locals.section = 'contato';
+	locals.contatoTypes = Contato.fields.contatoType.ops;
 	locals.formData = req.body || {};
 	locals.validationErrors = {};
-	locals.enquirySubmitted = false;
+	locals.contatoSubmitted = false;
 
 	// On POST requests, add the Enquiry item to the database
 	view.on('post', { action: 'contato' }, function (next) {
@@ -21,13 +21,13 @@ exports = module.exports = function (req, res) {
 
 		updater.process(req.body, {
 			flashErrors: true,
-			fields: 'name, email, phone, enquiryType, message',
-			errorMessage: 'There was a problem submitting your enquiry:',
+			fields: 'name, email, phone, contatoType, message',
+			errorMessage: 'Houve um problema para processar seu contato:',
 		}, function (err) {
 			if (err) {
 				locals.validationErrors = err.errors;
 			} else {
-				locals.enquirySubmitted = true;
+				locals.contatoSubmitted = true;
 			}
 			next();
 		});

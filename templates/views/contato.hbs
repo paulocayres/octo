@@ -4,14 +4,16 @@
 <div class="container">
 	<div class="row">
 		<div class="col-sm-8 col-md-6">
-			{{#if enquirySubmitted}}
-			<h3>Obrigado pelo contato.</h3>
+			{{#if contatoSubmitted}}
+			<h3>Contato realizado com sucesso.</h3>
+			<h3>Obrigado.</h3>
 			{{else}}
-			<form method="post">
-				<input type="hidden" name="action" value="contact">
+
+			<form method="post" id="myForm" name="myForm">
+				<input type="hidden" name="action" value="contato">
 				<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
 					<label>Nome</label>
-					<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+					<input type="text" name="name.full" class="form-control" value="{{formData.[name.full]}}">
 				</div>
 				<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
 					<label>Email</label>
@@ -21,11 +23,11 @@
 					<label>Telefone</label>
 					<input type="text" name="phone" placeholder="(opcional)" class="form-control" value="{{formData.phone}}">
 				</div>
-				<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
+				<div class="form-group {{#if validationErrors.contatoType}}has-error{{/if}}">
 					<label>Motivo do Contato</label>
-					<select name="enquiryType" class="form-control">
+					<select name="contatoType" class="form-control">
 						<option value="">(Selecione um)</option>
-						{{#each enquiryTypes}}
+						{{#each contatoTypes}}
 						<option value="{{value}}">{{label}}</option>
 						{{/each}}
 					</select>

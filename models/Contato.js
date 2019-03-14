@@ -15,7 +15,7 @@ Contato.add({
 	name: { type: Types.Name, required: true, label: 'Nome' },
 	email: { type: Types.Email, required: true, label: 'Email' },
 	phone: { type: String, label: 'Telefone' },
-	enquiryType: { type: Types.Select, label: 'Tipo de Contato', options: [
+	contatoType: { type: Types.Select, label: 'Tipo de Contato', options: [
 		{ value: 'message', label: 'Apenas deixar mensagem.' },
 		{ value: 'question', label: 'Tenho uma pergunta.' },
 		{ value: 'other', label: 'Outros assuntos.' },
@@ -25,5 +25,5 @@ Contato.add({
 });
 
 Contato.defaultSort = '-createdAt';
-Contato.defaultColumns = 'name, email, enquiryType, createdAt';
+Contato.defaultColumns = 'name, email, contatoType, createdAt';
 Contato.register();
