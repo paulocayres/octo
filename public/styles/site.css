@@ -6057,6 +6057,9 @@ h3 .small, .h3 small,
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 1px) {
+  .indexli {
+    font-size: 14px;
+    text-align: left; }
   .pad2 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -6097,6 +6100,9 @@ h3 .small, .h3 small,
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .indexli {
+    font-size: 14px;
+    text-align: left; }
   .pad2 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -6137,6 +6143,9 @@ h3 .small, .h3 small,
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .indexli {
+    font-size: 16px;
+    text-align: left; }
   .pad2 {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -6185,6 +6194,9 @@ h3 .small, .h3 small,
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .indexli {
+    font-size: 18px;
+    text-align: left; }
   .pad2 {
     padding-top: 80px;
     padding-bottom: 80px;
