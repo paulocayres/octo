@@ -17,7 +17,7 @@
 			<div class="row display-flex">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" style="position:relative;z-index:1;">
+					<div id="myCarousel" class="carousel slide fl-post-carousel-post" data-ride="carousel" style="position:relative;z-index:1;">
 						<!-- Indicators -->
 						<ol class="carousel-indicators" style="z-index:1">
 							{{#each data.servicos.results}}
@@ -29,7 +29,7 @@
 							{{#each data.servicos.results}}
 							<div class="item {{#if @first}}active{{/if}}">
 								{{#if image}}
-								<img src="{{{cloudinaryUrl image}}}" style="width:100%;">{{/if}}
+								<img src="{{{cloudinaryUrl image width='1280' height='622'}}}" style="width:100%;">{{/if}}
 								<div class="carousel-caption">
 									<h3>{{{content.brief}}}</h3>
 									<h4>{{{content.extended}}}</h4>

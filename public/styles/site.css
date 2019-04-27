@@ -5825,8 +5825,17 @@ button.close {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.col-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.fl-post-carousel-post {
+  border-radius: 10px;
+  overflow: hidden; }
+
 .carousel .item {
-  max-height: 550px;
+  /* max-height: 550px; */
   overflow: hidden; }
   .carousel .item h3 {
     color: white;
@@ -5882,10 +5891,10 @@ h3 .small, .h3 small,
     max-width: 100%;
     height: auto; }
 
-.evento img {
-  height: 300px;
-  width: 100%; }
-
+/* .evento img {
+	height: 300px;
+	width: 100%;
+} */
 .img-overflow {
   overflow: hidden;
   max-height: 80px;
@@ -6064,6 +6073,10 @@ h3 .small, .h3 small,
     padding-top: 80px;
     padding-bottom: 80px;
     margin-bottom: 40px; }
+  .pad2-index {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 40px; }
   .pad3 {
     padding-top: 10px;
     text-align: center;
@@ -6104,6 +6117,10 @@ h3 .small, .h3 small,
     font-size: 14px;
     text-align: left; }
   .pad2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 100px; }
+  .pad2-index {
     padding-top: 80px;
     padding-bottom: 80px;
     margin-bottom: 100px; }
@@ -6149,6 +6166,10 @@ h3 .small, .h3 small,
   .pad2 {
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-bottom: 100px; }
+  .pad2-index {
+    padding-top: 150px;
+    padding-bottom: 150px;
     margin-bottom: 100px; }
   .pad3 {
     padding-top: 80px;
@@ -6200,6 +6221,10 @@ h3 .small, .h3 small,
   .pad2 {
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-bottom: 50px; }
+  .pad2-index {
+    padding-top: 150px;
+    padding-bottom: 150px;
     margin-bottom: 50px; }
   .pad3 {
     padding-top: 80px;

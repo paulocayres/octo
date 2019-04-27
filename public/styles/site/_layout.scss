@@ -4,8 +4,19 @@
 }
 
 
+.col-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fl-post-carousel-post {
+	border-radius: 10px;
+	overflow: hidden;
+  }
+
 .carousel .item {
-	max-height: 550px;
+	/* max-height: 550px; */
 	overflow: hidden;
 
 	h3{
@@ -83,10 +94,10 @@ h3 .small,
 	}
 }
 
-.evento img {
+/* .evento img {
 	height: 300px;
 	width: 100%;
-}
+} */
 
 .img-overflow {
 	overflow: hidden;
@@ -314,6 +325,12 @@ h3 .small,
 		margin-bottom: 40px;
 	}
 
+	.pad2-index { 
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-bottom: 40px;
+	}
+
 	.pad3 { 
 		padding-top: 10px;
 		text-align: center;
@@ -387,6 +404,12 @@ h3 .small,
 	}
 
 	.pad2 { 
+		padding-top: 80px;
+		padding-bottom: 80px;
+		margin-bottom: 100px;
+	}
+
+	.pad2-index { 
 		padding-top: 80px;
 		padding-bottom: 80px;
 		margin-bottom: 100px;
@@ -466,6 +489,12 @@ h3 .small,
 	.pad2 { 
 		padding-top: 80px;
 		padding-bottom: 80px;
+		margin-bottom: 100px;
+	}
+
+	.pad2-index { 
+		padding-top: 150px;
+		padding-bottom: 150px;
 		margin-bottom: 100px;
 	}
 
@@ -559,6 +588,12 @@ h3 .small,
 	.pad2 { 
 		padding-top: 80px;
 		padding-bottom: 80px;
+		margin-bottom: 50px;
+	}
+
+	.pad2-index { 
+		padding-top: 150px;
+		padding-bottom: 150px;
 		margin-bottom: 50px;
 	}
 

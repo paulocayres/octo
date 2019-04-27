@@ -3,28 +3,24 @@
 </div-->
 <div class="container">
 	<!-- if galleries -->
-	{{#if portfolios}}
-		{{#each portfolios}}
-		<h2>{{name}}
-		</h2>
-		<div class="row gallery-images">
-				{{#if heroImage}}
-				<div class="col-sm-4 col-md-4 gallery-image">
-					<img src="{{cloudinaryUrl heroImage width='680' height='680'}}" class="img-rounded">
-				</div>
-				{{/if}}
-				<div class="col-sm-8 col-md-8">
-					<div class="row">
-						{{#each images}}
-						<div class="col-xs-4 col-sm-4 col-md-3 gallery-image">
-							<img src="{{cloudinaryUrl width='300' height='300'}}" class="img-rounded">
-						</div>
-						{{/each}}
-					</div>
-				</div>
+	{{#if portfolios}} {{#each portfolios}}
+	<h2>{{name}}
+	</h2>
+	<div class="row gallery-images">
+		{{#if heroImage}}
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 gallery-image">
+			<img src="{{cloudinaryUrl heroImage width='1280' height='622'}}" class="img-rounded">
 		</div>
-		{{/each}}
-	{{else}}
+		{{/if}}
+		<div class="row">
+			{{#each images}}
+			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 gallery-image">
+				<img src="{{cloudinaryUrl width='1280' height='622'}}" class="img-rounded">
+			</div>
+			{{/each}}
+		</div>
+	</div>
+	{{/each}} {{else}}
 	<!-- else -->
 	<h3 class="text-muted">Ainda não existe portfólio cadastrado.</h3>
 	{{/if}}
